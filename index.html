@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Callum Hilton</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
   <!-- main logo / nav -->
   <header>
     <div class="header-content">
-      <h1>Callum Hilton's Portfolio</h1>
+      <h1>Callum Hilton's Website</h1>
     </div>
     <nav>
       <ul>
@@ -27,7 +30,6 @@
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Developer & UX/UI Designer</h2>
     </div>
   </section>
 
@@ -41,38 +43,42 @@
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>My Portfolio</h2>
-      <div class="portfolio-item">
-        <img src="assets/images/02-portfolio-1.jpg" alt="LED Wall">
-        <h3>LED Wall</h3>
-        <p>Description of the project goes here.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/02-portfolio-2.jpg" alt="Calculator">
-        <h3>Calculator</h3>
-        <p>Description of the project goes here.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/02-portfolio-3.jpg" alt="Pastel Puzzles">
-        <h3>Pastel Puzzles</h3>
-        <p>Description of the project goes here.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/02-run-buddy.jpg" alt="Run Buddy">
-        <h3>Run Buddy</h3>
-        <p>Description of the project goes here.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/02-portfolio-4.jpg" alt="Surf Report">
-        <h3>Surf Report</h3>
-        <p>Description of the project goes here.</p>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/02-portfolio-1.jpg" class="d-block w-100" alt="LED Wall">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/02-portfolio-3.jpg" class="d-block w-100" alt="Pastel Puzzles">
+          </div>
+          <div class ="carousel-item">
+            <img src="assets/images/02-run-buddy.jpg" class="d-block w-100" alt="Run Buddy">
+          </div>
+          <div class ="carousel-item">
+            <img src="assets/images/02-portfolio-4.jpg" class="d-block w-100" alt="Surf Report">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>For any design or development enquiries, feel free to reach out to me at: <a href="mailto:callumgghilton@outlook.com">callumgghilton@outlook.com</a></p>
-    </section>
+    <footer class="contact-bar">
+      <div class="contact-links">
+        <a href="mailto:callumgghilton@outlook.com">Email</a>
+        <a href="https://www.linkedin.com/in/callum-hilton-033057220/" target="_blank">LinkedIn</a>
+        <a href="https://open.spotify.com/user/1161039590?si=WUxl-5PXSF-NDOb7oOxw-A" target="_blank">Spotify</a>
+        <a href="https://github.com/calltekk" target="_blank">GitHub</a>
+      </div>
+    </footer>
+  </body>
   </main>
 </body>
 
